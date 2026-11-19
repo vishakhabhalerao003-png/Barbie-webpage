@@ -2,52 +2,518 @@
 <html>
 	<head>
 		<title>
-			Pseudo-Task
+			Barbie Webpage
 		</title>
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.9.1/remixicon.css" integrity="sha512-FdAV4hphiNQnSV3CopyZQ5GY8ZNiwmI0pGo8meKtmmKjtiro8TNuRB6tqanbQo+tMGRcYxYJkBT5lQTe/3oTlQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 		
 		<style>
 		body {
-			background-color:#FCE4EF;
-			color:white
+			background-color: #FCE4EF;
+			color: #FFFFFF;
+			margin: 0px;
+			padding: 0px;
 		}
 		
-		h1 {
-			font-size:60px;
-			text-align:center;
+		* {
+			box-sizing: border-box;
 		}
 		
-		h1:hover {
-			color:#E0218A;
-			font-size:90px;
+		::selection {
+			color: pink;
+			background:#E0218A;
+		}
+			
+		header {
+			background-color: #E0218A;
+			color: darkred;
+			padding: 28px;
+		}
+
+		.welcome {
+			float: left;
+			color: darkred;
+			background-color: #E0218A;
+			border: none;
+			font-size: 21px;
+		}
+
+		.welcome-text {
+			float: left;
+			color: darkred;
+			font-size: 22px;
+			
+		}
+
+		.social-icons {
+			float: right;
+			font-size: 22px;
+			
 		}
 		
-		h1:first child > i{
-			font-size:18px
+		.welcome:hover {
+			color: white;
+		}
+
+		.welcome:active {
+			color: darkred;
+		}
+
+		.welcome-text:hover {
+			color: white;
+		}
+
+		.welcome-text:active {
+			color: darkred;
+		}
+
+		.social-icons i:hover {
+			color: white;
+		}
+
+		.social-icons i:active {
+			color: darkred;
 		}
 		
-		div {
-			border:1px solid grey;
-			border-radius:50px;
-			font-size:15px;
-			width:22%;
-			margin:auto;
-			background-color:white;
-			padding:1%;
-			color:grey;
-			text-align:center
+        main {
+            text-align: center;
+            padding: 50px 20px;
+            color: #E0218A;
+        }
+
+        main > h1{
+            font-size: 60px;
+            color: #E0218A;
+            margin: 20px;
+        }
+
+        main h1::before {
+            content: "♡ ";
+        }
+
+        main h1::after {
+            content: " ♡";
+        }
+
+        main h1:hover {
+            color: darkred;
+            font-size: 70px;
+        }
+
+        .search-box {
+            background-color: white;
+            border: 2px solid #FF69B4;
+            border-radius: 50px;
+            width: 60%;
+            margin: 30px auto;
+            padding: 15px;
+            font-size: 20px;
+            color: #E0218A;
+            text-align: left;
+        }
+
+        .search-box i {
+            color: #E0218A;
+            margin: 10px;
+        }
+
+        .search-box input {
+            border: none;
+            font-size: 18px;
+            width: 80%;
+            color: #E0218A;
+            background-color: white;
+        }
+
+        .search-box input::placeholder {
+            color: #E0218A;
+        }
+
+        .main-buttons button {
+            background-color: #E0218A;
+            color: white;
+            border: 2px solid #E0218A;
+            border-radius: 10px;
+            padding: 10px 25px;
+            font-size: 18px;
+            margin:3% auto;
+        }
+
+        .main-buttons button:hover {
+            background-color: white;
+            color: #E0218A;
+        }
+
+        .main-buttons button:active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        .look-button {
+            background-color: #E0218A;
+            color: white;
+            border: 2px solid #E0218A;
+            border-radius: 10px;
+            padding: 10px 25px;
+            font-size: 19px;
+            text-decoration: none;
+            margin: 30px;
+        }
+
+        .look-button:hover {
+            background-color: white;
+            color: #E0218A;
+        }
+
+        .look-button:active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+       .categories {
+			margin: 30px 5%;
+		}
+
+		.category-card > a {
+			text-decoration:none;
+			color:#E0218A
+		}
+		
+		.category-card:hover > a {
+			color: white;
+		}
+        
+		.category-card {
+            background-color: white;
+			border: 2px solid #FF69B4;
+			border-radius: 25px;
+			width: 28%;
+			margin: 1%;
+			padding: 20px;
+			color: #E0218A;
+			font-size: 22px;
+			float: left;
+        }
+
+        .category-card:hover {
+            background-color: #E0218A;
+            color: white;
+            font-size: 25px;
+        }
+
+        .category-card i {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .category-card figure {
+            margin: 0px;
+        }
+
+        .category-card img {
+            width: 100%;
+        }
+		
+		footer {
+			background-color: #E0218A;
+			color: darkred;
+			text-align: center;
+			padding: 20px;
+		}
+		
+		.thank-you {
+			color: darkred;
+			font-size:30px
+		}
+
+		.thank-you:hover {
+			color: white;
+		}
+
+		.thank-you::before {
+			content: "♡ ";
+		}
+
+		.thank-you::after {
+			content: " ♡";
+		}
+
+		.main > h1::before {
+			content: "♡ ";
+		}
+
+		.main > h1::after {
+			content: " ♡";
+		}
+
+		.pink-world::before {
+			content: "♡ ";
+		}
+
+		.pink-world::after {
+			content: " ♡";
+		}
+		
+		.footer-links {
+			margin: 15px;
+			font-size:22px
+		}
+
+		.footer-links a {
+			color: darkred;
+			text-decoration: none;
+			padding: 5px;
+		}
+
+		.footer-links a::first-letter {
+			color: #FF69B4;
+			font-size: 20px;
+		}
+
+		.footer-links a:hover {
+			color: white;
+			border: 1px dotted darkred;
+		}
+		
+		.footer-links a:active {
+			color: darkred;
+			background-color: #FF69B4;
+			border: 1px dotted darkred;
+		}
+
+		footer hr {
+			width: 50%;
+			border: none;
+			border-top: 1px solid #F7BFD7;
+			margin: 20px auto;
+		}
+
+		.barbie h2 {
+			color: darkred;
+		}
+
+		.barbie h2:hover {
+			color: darkred;
+			font-size:80px
+		}
+
+		.barbie p {
+			font-size:20px;
+			width:65%;
+			margin: 0% auto 2% auto;
+			color:pink
+		}
+
+		.barbie p::first-line {
+			color:#7A2855;
+			font-size: 35px;
+		}
+
+		.back-top {
+			color: darkred;
+			text-decoration:none;
+		}
+
+		.back-top:hover {
+			color: white;
+		}
+
+		.back-top:active {
+			color: darkred;
+		}
+		
+		.lastimg {
+			width:10%;
+			margin:auto
+		}
+		.lastimg:hover{
+			width:25%;
 		}
 		</style>
 	</head>
 	<body>
-		<h1>
-			<i class="ri-poker-hearts-fill">
-				Heyy Barbie 
-			<i class="ri-poker-hearts-fill"></i>
-		</h1>
-		<div>
-			Search
+	
+		<header id="top">
+
+			<button class="welcome" popovertarget="menu" popovertargetaction="toggle">
+				<i class="ri-poker-hearts-fill"></i>
+			</button>
+
+			<div class="welcome-text">
+				<b>Welcome to Queen World</b>
+			</div>
+
+			<div class="social-icons">
+				<i class="ri-youtube-fill"></i>
+				<i class="ri-facebook-box-fill"></i>
+				<i class="ri-instagram-fill"></i>
+				<i class="ri-whatsapp-fill"></i>
+			</div>
+
+		</header>
+		
+		<main>
+
+			<h1>
+				Heyy Babie !
+			</h1>
+
+			<div class="search-box">
+
+				<i class="ri-search-ai-2-line"></i>
+
+				<input type="search" placeholder="Search">
+
+			</div>
+
+			<div class="main-buttons">
+
+				<a href="#categories" class="look-button">
+					What are you looking for?
+				</a>
+
+				<button popovertarget="surprise">
+					Surprise Me !
+				</button>
+
+			</div>
+			
+			<img src="https://i.pinimg.com/736x/c2/e6/4f/c2e64f4a7cbc47bf84bafa592e61be7c.jpg" style="width:96%; margin:auto">
+			
+			<div class="categories" id="categories">
+
+				<div class="category-card">
+					<a href="https://in.pinterest.com/search/pins/?q=barbie%20fashion&rs=typed">
+						<figure>
+
+							<img src="https://i.pinimg.com/736x/02/13/8d/02138dad8790c1ea207c6ec0acd42a20.jpg">
+
+							<figcaption>
+								Fashion
+							</figcaption>
+
+						</figure>
+					</a>
+				</div>
+
+				<div class="category-card">
+					<a href="https://in.pinterest.com/search/pins/?q=barbie%20fashion&rs=typed">
+						<figure>
+
+							<img src="https://i.pinimg.com/1200x/8c/64/02/8c6402f2660a6a9473c319f732704acb.jpg">
+
+							<figcaption>
+								Beauty
+							</figcaption>
+
+						</figure>
+					</a>
+				</div>
+				
+				<div class="category-card">
+					<a href="https://in.pinterest.com/search/pins/?q=barbie%20lifestyle&rs=ac&len=12&source_id=ac_Ar2fGhqf&eq=barbie%20lifes&etslf=4786">
+						<figure>
+
+							<img src="https://i.pinimg.com/736x/9f/fe/22/9ffe228a8b30f59706df582808893773.jpg">
+
+							<figcaption>
+								Lifestyle
+							</figcaption>
+
+						</figure>
+					</a>
+				</div>
+			</div>
+			
+			<div class="categories" id="categories">
+
+				<div class="category-card">
+					<a href="https://in.pinterest.com/search/pins/?q=barbie%20travel&rs=typed">
+						<figure>
+
+							<img src="https://i.pinimg.com/736x/0e/f2/f2/0ef2f2e59b7be0636ac2632e55b3e391.jpg">
+
+							<figcaption>
+								Travel
+							</figcaption>
+
+						</figure>
+					</a>
+				</div>
+				
+				<div class="category-card">
+					<a href="https://in.pinterest.com/search/pins/?q=barbie%20entertainment&rs=ac&len=16&source_id=ac_W1KIVWMD&eq=barbie%20entertain&etslf=8320">
+						<figure>
+
+							<img src="https://i.pinimg.com/736x/7d/10/ad/7d10ad1027d64139108d3761b59e3668.jpg">
+
+							<figcaption>
+								Entertainment
+							</figcaption>
+
+						</figure>
+					</a>
+				</div>
+				
+				<div class="category-card">
+					<a href="https://in.pinterest.com/search/pins/?q=barbie%20more&rs=typed">
+						<figure>
+
+							<img src="https://i.pinimg.com/736x/4e/51/95/4e5195e2425ea158ed91d6cc1535d3b7.jpg">
+
+							<figcaption>
+								More
+							</figcaption>
+
+						</figure>
+					</a>
+				</div>
+				
+			</div>
+
+		</main>
+		<footer style="margin-top:100%">
+
+			<h3 class="thank-you">THANK YOU FOR VISITING</h3>
+
+			<div class="footer-links">
+				<a href="https://en.wikipedia.org/wiki/Barbie">About Barbie</a> •
+				<a href="https://www.youtube.com/playlist?list=PLjIwbiT9GCvWr_fyZMwi6n3eyrYLe7OgV">Barbie Movies</a> •
+				<a href="https://moviesanywhere.com/collection/barbie">Barbie Cartoons</a> •
+				<a href="https://www.pinterest.com/ideas/barbie-stickers/913423017248/">Barbie Stickers</a>
+			</div>
+
+			<hr>
+
+			<div class="barbie">
+				<div>
+					<h2>Barbie!</h2>
+					<img src="https://i.pinimg.com/736x/bd/79/83/bd7983edd577be911a0b0e05eca0ecfb.jpg" class="lastimg">
+				</div>
+				
+				<p>
+					<em>The heart of my soul since the 2000s.<br>
+					From childhood to teenage years and now adulthood,
+					she has always been something I turn to whenever
+					I feel anything other than happy. Not just a cartoon,
+					but a whole childhood filled with memories.
+					Never boring, always close to my heart, and forever
+					a part of me.</em>
+				</p>
+			</div>
+
+			<a href="#top" class="back-top">Back to top
+				<i class="ri-arrow-up-long-line"></i>
+			</a>
+		
+			<p class="pink-world">
+				Made in a pink world
+			</p>
+
+		</footer>
+		
+		<div id="menu" popover>
+			
 		</div>
 	</body>
 </html>

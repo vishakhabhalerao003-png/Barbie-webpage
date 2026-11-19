@@ -188,7 +188,7 @@
 			border: 2px solid #FF69B4;
 			border-radius: 25px;
 			width: 28%;
-			margin: 1%;
+			margin:1%;
 			padding: 20px;
 			color: #E0218A;
 			font-size: 22px;
@@ -219,6 +219,7 @@
 			color: darkred;
 			text-align: center;
 			padding: 20px;
+			margin-top:30%
 		}
 		
 		.thank-you {
@@ -280,7 +281,7 @@
 			background-color: #FF69B4;
 			border: 1px dotted darkred;
 		}
-
+		
 		footer hr {
 			width: 50%;
 			border: none;
@@ -307,6 +308,11 @@
 		.barbie p::first-line {
 			color:#7A2855;
 			font-size: 35px;
+		}
+		
+		.barbie p::first-letter {
+			color:white;
+			font-size:55px;
 		}
 
 		.back-top {
@@ -353,35 +359,37 @@
 		</header>
 		
 		<main>
+			<section>
+				<h1>
+					Heyy Babie !
+				</h1>
 
-			<h1>
-				Heyy Babie !
-			</h1>
+				<div class="search-box">
 
-			<div class="search-box">
+					<i class="ri-search-ai-2-line"></i>
 
-				<i class="ri-search-ai-2-line"></i>
+					<input type="search" placeholder="Search">
 
-				<input type="search" placeholder="Search">
+				</div>
 
-			</div>
+				<div class="main-buttons">
 
-			<div class="main-buttons">
+					<a href="#categories" class="look-button">
+						What are you looking for?
+					</a>
 
-				<a href="#categories" class="look-button">
-					What are you looking for?
-				</a>
+					<button popovertarget="surprise">
+						Surprise Me !
+					</button>
 
-				<button popovertarget="surprise">
-					Surprise Me !
-				</button>
-
-			</div>
+				</div>
+				
+			</section>
 			
 			<img src="https://i.pinimg.com/736x/c2/e6/4f/c2e64f4a7cbc47bf84bafa592e61be7c.jpg" style="width:96%; margin:auto">
 			
-			<div class="categories" id="categories">
-
+			<section class="categories" style="margin-left:10%" id="categories">
+			
 				<div class="category-card">
 					<a href="https://in.pinterest.com/search/pins/?q=barbie%20fashion&rs=typed">
 						<figure>
@@ -423,56 +431,10 @@
 						</figure>
 					</a>
 				</div>
-			</div>
-			
-			<div class="categories" id="categories">
-
-				<div class="category-card">
-					<a href="https://in.pinterest.com/search/pins/?q=barbie%20travel&rs=typed">
-						<figure>
-
-							<img src="https://i.pinimg.com/736x/0e/f2/f2/0ef2f2e59b7be0636ac2632e55b3e391.jpg">
-
-							<figcaption>
-								Travel
-							</figcaption>
-
-						</figure>
-					</a>
-				</div>
-				
-				<div class="category-card">
-					<a href="https://in.pinterest.com/search/pins/?q=barbie%20entertainment&rs=ac&len=16&source_id=ac_W1KIVWMD&eq=barbie%20entertain&etslf=8320">
-						<figure>
-
-							<img src="https://i.pinimg.com/736x/7d/10/ad/7d10ad1027d64139108d3761b59e3668.jpg">
-
-							<figcaption>
-								Entertainment
-							</figcaption>
-
-						</figure>
-					</a>
-				</div>
-				
-				<div class="category-card">
-					<a href="https://in.pinterest.com/search/pins/?q=barbie%20more&rs=typed">
-						<figure>
-
-							<img src="https://i.pinimg.com/736x/4e/51/95/4e5195e2425ea158ed91d6cc1535d3b7.jpg">
-
-							<figcaption>
-								More
-							</figcaption>
-
-						</figure>
-					</a>
-				</div>
-				
-			</div>
-
+		
+			</section>
 		</main>
-		<footer style="margin-top:100%">
+		<footer>
 
 			<h3 class="thank-you">THANK YOU FOR VISITING</h3>
 
@@ -512,8 +474,5 @@
 
 		</footer>
 		
-		<div id="menu" popover>
-			
-		</div>
 	</body>
 </html>
